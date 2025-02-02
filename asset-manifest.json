@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rhombixtechnologies_tasks/static/css/main.e29c03d8.css",
+    "main.js": "/rhombixtechnologies_tasks/static/js/main.e1bc5518.js",
+    "index.html": "/rhombixtechnologies_tasks/index.html",
+    "main.e29c03d8.css.map": "/rhombixtechnologies_tasks/static/css/main.e29c03d8.css.map",
+    "main.e1bc5518.js.map": "/rhombixtechnologies_tasks/static/js/main.e1bc5518.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e29c03d8.css",
+    "static/js/main.e1bc5518.js"
+  ]
+}
