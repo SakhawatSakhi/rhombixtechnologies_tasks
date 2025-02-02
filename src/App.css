@@ -1,0 +1,135 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #454b50;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-right: 28px;
+}
+
+.todo_container {
+  width: 150%;
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo_header {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+  padding-bottom: 10px;
+}
+
+.todo_input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.todo_input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo_input input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid blue;
+  border-radius: 5px;
+}
+
+.todo_input button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.todo_input button:hover {
+  color: blue;
+  background-color: lightblue;
+}
+
+.task_list {
+  overflow-y: auto;
+  flex-grow: 1;
+  max-height: 40vh;
+}
+
+.task_card {
+  background: #fff;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  font-weight: bold;
+}
+
+.task_card .task_info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.task_card .icons {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  
+}
+
+.task_card .icon {
+  cursor: pointer;
+  font-size: 16px;
+  padding-top: 40px;
+}
+
+.task_card .icon.delete {
+  color: red;
+  padding-top: 40px;
+}
+
+.done {
+  color: green;
+  font-weight: bold;
+}
+
+.pending {
+  color: red;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .todo_container {
+    width: 95%;
+    min-height: 60vh;
+  }
+
+
+  .task_list {
+    max-height: 50vh;
+  }
+}
